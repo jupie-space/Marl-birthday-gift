@@ -10,13 +10,18 @@
 
     <style>
 
+         @font-face {
+            font-family: "MyComicSans";
+            src: url("comic-sans.ttf");
+        }
+
         body {
         margin: 0;
         min-height: 100vh;
 
         background-color: #A9D9EF;
 
-        font-family: "Comic Sans MS", cursive;
+        font-family: "MyComicSans", cursive;
 
         display: flex;
         justify-content: center;
@@ -444,7 +449,6 @@
         </p>
 
 
-        <!-- FIRST BUTTON -->
         <button class="letter-button" onclick="window.location.href='letter.html'">
             Petit cadeau
         </button>
@@ -457,9 +461,6 @@
         <div id="surprise">
             YOUHOUU
         </div>
-
-
-        <!-- SECOND BUTTON -->
 
         <button
             id="second-button"
@@ -572,6 +573,7 @@
             }, 4000);
 
         }
+
 
         function makeBalloons() {
 
